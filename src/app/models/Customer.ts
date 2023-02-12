@@ -8,6 +8,17 @@ export class Customer {
     private _active: boolean;
     private _createdDate: Date;
 
+    constructor(id: number, name: string, lastName: string, email: string, birthDate: Date, 
+        active: boolean, createdDate: Date) {
+            this._id = id;
+            this._name = name;
+            this._lastName = lastName;
+            this._email = email;
+            this._birthDate = birthDate;
+            this._active = active;
+            this._createdDate = createdDate;
+}
+
     public get id(){
         return this._id;
     }
